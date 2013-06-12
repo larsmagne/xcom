@@ -1,0 +1,11 @@
+#!/bin/bash
+
+command="$@"
+
+file="/tmp/xcom.$$"
+
+echo "$command" > $file
+echo "history -s $command" >> $file
+echo "rm $file" >> $file
+
+xterm -e bash --rcfile $file
