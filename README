@@ -1,0 +1,3 @@
+Open an xterm and run the specified command as if you had typed it in
+on the command line.  The command is placed in the bash history, so
+<Up> will display it.
